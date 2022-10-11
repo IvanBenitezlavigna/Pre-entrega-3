@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import "generales";
+
+
+.grid-container > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container-serv > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container-clases > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-container-form > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.grid-container-quienes > * {
+  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.header {
+  grid-area: header;
+  background-image: url(../img/gym-g436515767_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  margin: 0;
+  justify-content: center;
+}
+
+.titulo{
+  color:lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: 2px 5px rgb(3, 3, 3);
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color:#ecf0f1;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: whitesmoke;
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+  
+}
+
+.footer {
+  grid-area: footer;
+  background-color:#ecf0f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.container-fluid{
+  color: #8395a7;
+  display: grid;
+  
+}
+.navbar-brand{
+  display: flex;
+  justify-content: start;
+  height: 40px;
+}
+
+
+.collapse{
+  background-color: #ecf0f1;
+}
+
+.img-main{
+  opacity: 0,39;
+  transition: opacity 3s ease 0s;
+  max-height: max-content;
+}
+
+.img-main:hover{
+  opacity: 0.77;
+}
+
+
+.frase-footer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: small;
+  height: 20px;
+}
+.redes{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2px;
+}
+
+.icon{
+  width: 20px;
+  height: auto;
+  padding: 5px 3px none 3px;
+  
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header"  80px
+    "navbar"  50px
+    "main"    auto
+    "sidebar" 100px
+    "footer"  50px;
+}
+/*servicios*/
+
+.contenido-servicios {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+
+.img-serv{
+  padding: 2px 2px 2px 2px;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+  width: 200px;
+  height: 200px;
+  padding: 10;
+  box-sizing: border-box;
+  border-radius: 100px;
+  
+  
+}
+
+.img-serv:hover{
+  opacity: 0.6;
+}
+
+.contenido-clases{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.img-clases{
+  padding: 2px 2px 2px 2px;
+  opacity: 1;
+  transition: opacity 1s ease 0s;
+  width: 200px;
+  height: 200px;
+  padding: 10;
+  box-sizing: border-box;
+  border-radius: 100px;
+}
+
+.img-clases:hover{
+  opacity: 0.6;
+}
+
+.grid-container-form{
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header"  80px
+    "navbar"  50px
+    "main"    auto
+    "footer"  50px;
+}
+
+
+ /*formulario*/
+ .main-form{
+  background-image: url(../img/imgportada.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
+  margin: 0;
+  width: 100vw;
+}
+
+form{
+  width: 60%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 7;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.mb-3{
+  color: white;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgb(43, 41, 41);
+  color: white;
+  border: none;
+  border-radius: 7px;
+
+}
+
+.button :hover{
+  cursor: pointer;
+}
+
+.grid-container-quienes{
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header"  80px
+    "navbar"  50px
+    "main"    auto
+    "footer"  50px;
+}
+
+.contenido-quienes{
+  justify-content: center;
+  flex-basis: auto;
+}
+
+
+
+
+
+
+@media (min-width: 600px) {
+  .grid-container {
+   grid-template:
+      "header  header" 100px
+      "navbar  navbar" 50px
+      "sidebar main"   auto
+      "footer  footer" 100px /
+      200px    auto;
+  }
+
+  .grid-container-serv{
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "header header header"  100px
+      "navbar  navbar navbar"  50px
+      "main  main main"    auto
+      "footer footer footer"  100px;
+  }
+
+  .contenido-servicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .img-serv{
+    height: 200px;
+    width: 200px;
+  }
+
+  .frase-footer{
+    font-size: large;
+    height: 30px;
+    padding-top: 10px;
+  
+  }
+  .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2px;
+  }
+  .icon{
+    width: 30px;
+    height: auto;
+    padding: 5px 3px none 3px;
+    }
+    /*formulario*/
+
+
+  .grid-container-form{
+      display: grid;
+      gap: 10px;
+      grid-template:
+      "header header header"  100px
+      "navbar  navbar navbar"  50px
+      "main  main main"    auto
+      "footer footer footer"  100px;
+      }
+
+  form{
+        width: 450px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 7;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 5px;
+      }
+
+  .grid-container-clases{
+    grid-template:
+    "header  header header"  100px
+    "navbar  navbar navbar " 50px
+    "main     main  main"    auto
+    "footer  footer footer"  100px 
+  }
+
+  .grid-container-quienes{
+    grid-template:
+     "header  header header"  100px
+     "navbar  navbar navbar " 50px
+     "main     main  main"
+     "footer  footer footer"  100px /
+      200px    auto   200px;
+  }
+ 
+  .img-quienes{
+    height: 200px;
+    width: 200px;
+  }
+
+  .contenido-quienes{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  
+  }
+
+
+@media (min-width: 900px) {
+
+  .titulo{
+    font-size: 50px;
+    padding-top: 130px;
+    
+  }
+  .grid-container {
+    grid-template:
+      "header  header header"  300px
+      "navbar  navbar navbar " 50px
+      "main     main  sidebar" auto
+      "footer  footer footer"  100px /
+      200px    auto   200px;
+  }
+
+  .grid-container-serv {
+    grid-template:
+      "header  header header"  300px
+      "navbar  navbar navbar " 50px
+      "main     main  main"     auto
+      "footer  footer footer"  100px /
+      200px    auto   200px;
+
+  }
+  
+  .navbar-brand{
+    height: 50px;
+  }
+
+  .navbar{
+    background-color:#ecf0f1;
+  }
+
+  .collapse{
+    background-color: #ecf0f1;
+  }
+
+  .contenido-servicios{
+    display: grid;
+    grid-template-columns: 3fr;
+    grid-template-areas: 
+    "imgServ1 imgServ2  imgServ3" 
+    "p1 p2 p3";  
+  }
+
+  .imgServ1{
+    grid-area: imgServ1;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .imgServ2{
+    grid-area: imgServ2;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .imgServ3{
+    grid-area:imgServ3;
+    display: flex;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .p1{
+    grid-area: p1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    font-weight: bold;
+  }
+
+  .p2{
+    grid-area: p2;
+    padding-top: 10px;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    font-weight: bold;
+  }
+
+  .p3{
+    grid-area: p3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    font-weight: bold;
+  }
+
+  .img-serv{
+    height: 400px;
+    width: 400px;
+  }
+
+  .frase-footer{
+    font-size: large;
+    height: 40px;
+    padding-top: 10px;
+  
+  }
+  .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 2px;
+  }
+  .icon{
+    width: 60px;
+    height: auto;
+    padding: 5px 3px none 3px;
+    }
+
+  .grid-container-form{
+        display: grid;
+        gap: 10px;
+        grid-template:
+        "header header header"  300px
+        "navbar  navbar navbar"  50px
+        "main  main main"    auto
+        "footer footer footer"  100px;
+    }
+
+  form{
+      width: 450px;
+      margin: auto;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 7;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+
+  
+    .img-clases{
+      height: 400px;
+      width: 400px;
+      padding:5px 5px 5px 5px ;
+    }
+    .grid-container-clases{
+      grid-template:
+      "header  header header"  300px
+      "navbar  navbar navbar " 50px
+      "main     main  main" auto
+      "footer  footer footer"  100px 
+      200px    auto   200px;
+    }
+    main{
+      display: flex;
+      justify-content: center;
+
+    }
+    .contenido-clases{
+      display: grid;
+      grid-template-columns: 3fr;
+      grid-template-areas: 
+      "img1 img2  img3"
+      "h2   h3    h4";
+    }
+    .img1{
+      grid-area: img1;
+      display: flex;
+      padding: 10px 10px 10px 10px;
+      width: 400px;
+    }
+
+    .img2{
+      grid-area: img2;
+      display: flex;
+      padding: 10px 10px 10px 10px;
+      width: 400px;
+    }
+    
+
+    .img3{
+      grid-area: img3;
+      display: flex;
+      padding: 10px 10px 10px 10px;
+      width: 400px;
+    }
+    
+
+    .h2{
+      grid-area: h2;
+    }
+
+    .h3{
+      grid-area: h3;
+    }
+
+    .h4{
+      grid-area: h4;
+    }
+
+    .grid-container-quienes{
+      grid-template:
+      "header  header header"  300px
+      "navbar  navbar navbar " 50px
+      "main     main  main" auto
+      "footer  footer footer"  100px /
+      200px    auto   200px;
+    }
+
+    .contenido-quienes{
+      display: flex;
+      justify-content: center;
+      flex-basis: auto ;
+    }
+
+    .img-quienes{
+      height: 400px;
+      width: 400px;
+    }
+}
+  
