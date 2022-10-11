@@ -1,0 +1,17 @@
+.navbar {
+    grid-area: navbar;
+    background-color:#ecf0f1;
+    display: flex;
+    justify-content: center;
+        .navbar-brand{
+            display: flex;
+            justify-content: start;
+            height: 40px;
+        }
+        .collapse{
+        background-color: #ecf0f1;
+        }
+
+
+
+  }

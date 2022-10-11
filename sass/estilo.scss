@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
 @import "generales";
+@import "nav";
+@import "header";
 
 
 .grid-container > * {
@@ -38,36 +40,6 @@
   text-align: center;
 }
 
-
-.header {
-  grid-area: header;
-  background-image: url(../img/gym-g436515767_1920.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; 
-  margin: 0;
-  justify-content: center;
-}
-
-.titulo{
-  color:lightgrey;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 800;
-  text-shadow: 2px 5px rgb(3, 3, 3);
-  display: flex;
-  justify-content: center;
-
-}
-
-.navbar {
-  grid-area: navbar;
-  background-color:#ecf0f1;
-  display: flex;
-  justify-content: center;
-}
-
 .sidebar {
   grid-area: sidebar;
   background-color: whitesmoke;
@@ -88,32 +60,12 @@
   justify-items: center;
 }
 
-.container-fluid{
-  color: #8395a7;
-  display: grid;
-  
-}
-.navbar-brand{
-  display: flex;
-  justify-content: start;
-  height: 40px;
-}
 
 
-.collapse{
-  background-color: #ecf0f1;
+.imgCarrousel{
+    width: 485px;
+    height: 200px;
 }
-
-.img-main{
-  opacity: 0,39;
-  transition: opacity 3s ease 0s;
-  max-height: max-content;
-}
-
-.img-main:hover{
-  opacity: 0.77;
-}
-
 
 .frase-footer{
   display: flex;
@@ -164,9 +116,7 @@
   padding: 10;
   box-sizing: border-box;
   border-radius: 100px;
-  
-  
-}
+  }
 
 .img-serv:hover{
   opacity: 0.6;
@@ -342,6 +292,11 @@ form{
     "footer  footer footer"  100px 
   }
 
+  .img-clases{
+    width: 400px;
+    height: 400px;
+  }
+
   .grid-container-quienes{
     grid-template:
      "header  header header"  100px
@@ -515,7 +470,7 @@ form{
       grid-template:
       "header  header header"  300px
       "navbar  navbar navbar " 50px
-      "main     main  main" auto
+      "main    main  main" auto
       "footer  footer footer"  100px 
       200px    auto   200px;
     }
@@ -536,6 +491,7 @@ form{
       display: flex;
       padding: 10px 10px 10px 10px;
       width: 400px;
+      height: 400px;
     }
 
     .img2{
@@ -543,6 +499,7 @@ form{
       display: flex;
       padding: 10px 10px 10px 10px;
       width: 400px;
+      height: 400px;
     }
     
 
@@ -551,19 +508,26 @@ form{
       display: flex;
       padding: 10px 10px 10px 10px;
       width: 400px;
+      height: 400px;
     }
     
 
     .h2{
       grid-area: h2;
+      width: 400px;
+      height: 400px;
     }
 
     .h3{
       grid-area: h3;
+      width: 400px;
+      height: 400px;
     }
 
     .h4{
       grid-area: h4;
+      width: 400px;
+      height: 400px;
     }
 
     .grid-container-quienes{
