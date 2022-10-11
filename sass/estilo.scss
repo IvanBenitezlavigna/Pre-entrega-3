@@ -462,8 +462,7 @@ form{
 
   
     .img-clases{
-      height: 400px;
-      width: 400px;
+      @include sizeImg (400px, 400px);
       padding:5px 5px 5px 5px ;
     }
     .grid-container-clases{
