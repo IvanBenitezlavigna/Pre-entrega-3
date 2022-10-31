@@ -156,6 +156,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 4em;
 }
 
 .img-serv {
@@ -178,6 +179,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  padding-top: 4em;
 }
 
 .img-clases {
@@ -249,6 +251,7 @@ form {
   justify-content: center;
   flex-basis: auto;
 }
+
 
 @media (min-width: 600px) {
   .grid-container {
@@ -474,4 +477,9 @@ form {
     height: 400px;
     width: 400px;
   }
+  .textoQuienes{
+    padding-top: 4em;
+  }
+  
+
 }/*# sourceMappingURL=estilo.css.map */
