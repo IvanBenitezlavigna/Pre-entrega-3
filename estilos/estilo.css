@@ -147,7 +147,7 @@ body {
 .grid-container {
   display: grid;
   gap: 10px;
-  grid-template: "header" 80px "navbar" 50px "main" auto "sidebar" 100px "footer" 50px;
+  grid-template: "header" 80px "navbar" 50px "main" auto  "footer" 50px;
 }
 
 /*servicios*/
@@ -252,7 +252,7 @@ form {
 
 @media (min-width: 600px) {
   .grid-container {
-    grid-template: "header  header" 100px "navbar  navbar" 50px "sidebar main" auto "footer  footer" 100px/200px auto;
+    grid-template: "header  header" 100px "navbar  navbar" 50px "main main" auto "footer  footer" 100px/200px auto;
   }
   .grid-container-serv {
     display: grid;
@@ -320,7 +320,7 @@ form {
     padding-top: 130px;
   }
   .grid-container {
-    grid-template: "header  header header" 300px "navbar  navbar navbar " 50px "main     main  sidebar" auto "footer  footer footer" 100px/200px auto 200px;
+    grid-template: "header  header header" 300px "navbar  navbar navbar " 50px "main     main  main" auto "footer  footer footer" 100px/200px auto 200px;
   }
   .grid-container-serv {
     grid-template: "header  header header" 300px "navbar  navbar navbar " 50px "main     main  main" auto "footer  footer footer" 100px/200px auto 200px;
