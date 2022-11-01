@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Pacifico&family=Pangolin&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,12 +8,48 @@
 
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
   font-family: "Public Sans", sans-serif;
   font-size: 1.2rem;
   min-height: 100%;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+}
+.navbar .navbar-brand {
+  display: flex;
+  justify-content: start;
+  height: 40px;
+}
+.navbar .collapse {
+  background-color: #ecf0f1;
+}
+
+.header {
+  grid-area: header;
+  background-image: url(../img/gym-g436515767_1920.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  justify-content: center;
+}
+.header .titulo {
+  color: lightgrey;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  text-shadow: 2px 5px rgb(3, 3, 3);
+  display: flex;
+  justify-content: center;
 }
 
 .grid-container > * {
@@ -50,39 +87,6 @@ body {
   text-align: center;
 }
 
-.header {
-  grid-area: header;
-  background-image: url(../img/gym-g436515767_1920.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  justify-content: center;
-}
-
-.titulo {
-  color: lightgrey;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  font-size: 30px;
-  text-transform: uppercase;
-  font-weight: 800;
-  text-shadow: 2px 5px rgb(3, 3, 3);
-  display: flex;
-  justify-content: center;
-}
-
-.navbar {
-  grid-area: navbar;
-  background-color: #ecf0f1;
-  display: flex;
-  justify-content: center;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  background-color: whitesmoke;
-}
-
 .main {
   grid-area: main;
   width: 100%;
@@ -96,24 +100,6 @@ body {
   align-items: center;
   justify-items: center;
 }
-
-.container-fluid {
-  color: #8395a7;
-  display: grid;
-}
-
-.navbar-brand {
-  display: flex;
-  justify-content: start;
-  height: 40px;
-}
-
-.collapse {
-  background-color: #ecf0f1;
-}
-
-
-
 
 .frase-footer {
   display: flex;
@@ -138,7 +124,12 @@ body {
 .grid-container {
   display: grid;
   gap: 10px;
-  grid-template: "header" 80px "navbar" 50px "main" auto  "footer" 50px;
+  grid-template: "header" 80px "navbar" 50px "main" auto "footer" 50px;
+}
+
+.portada {
+  height: 251px;
+  width: 429px;
 }
 
 /*servicios*/
@@ -156,7 +147,7 @@ body {
   transition: opacity 1s ease 0s;
   width: 200px;
   height: 200px;
-  padding: 10;
+  padding: 20px 0 0 10px;
   box-sizing: border-box;
   border-radius: 100px;
 }
@@ -228,10 +219,6 @@ form {
   border-radius: 7px;
 }
 
-.button :hover {
-  cursor: pointer;
-}
-
 .grid-container-quienes {
   display: grid;
   gap: 10px;
@@ -243,21 +230,31 @@ form {
   flex-basis: auto;
 }
 
+.textoQuienes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 4em;
+}
+
+.parrafoQuienes {
+  padding-top: 4em;
+}
 
 @media (min-width: 600px) {
   .grid-container {
-    grid-template: "header  header" 100px "navbar  navbar" 50px "main main" auto "footer  footer" 100px/200px auto;
+    grid-template: "header  header" 100px "navbar  navbar" 50px "main    main" auto "footer  footer" 100px/200px auto;
   }
   .grid-container-serv {
     display: grid;
     gap: 10px;
     grid-template: "header header header" 100px "navbar  navbar navbar" 50px "main  main main" auto "footer footer footer" 100px;
   }
-
   .contenido-servicios {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 4em;
   }
   .img-serv {
     height: 200px;
@@ -297,6 +294,10 @@ form {
   .grid-container-clases {
     grid-template: "header  header header" 100px "navbar  navbar navbar " 50px "main     main  main" auto "footer  footer footer" 100px;
   }
+  .img-clases {
+    width: 400px;
+    height: 400px;
+  }
   .grid-container-quienes {
     grid-template: "header  header header" 100px "navbar  navbar navbar " 50px "main     main  main" "footer  footer footer" 100px/200px auto 200px;
   }
@@ -329,11 +330,11 @@ form {
   .collapse {
     background-color: #ecf0f1;
   }
-
   .contenido-servicios {
     display: grid;
     grid-template-columns: 3fr;
     grid-template-areas: "imgServ1 imgServ2  imgServ3" "p1 p2 p3";
+    padding-top: 4em;
   }
   .imgServ1 {
     grid-area: imgServ1;
@@ -415,16 +416,12 @@ form {
     margin-top: 5px;
   }
   .img-clases {
-    height: 400px;
     width: 400px;
+    height: 400px;
     padding: 5px 5px 5px 5px;
   }
   .grid-container-clases {
-    grid-template: "header  header header" 300px "navbar  navbar navbar " 50px "main     main  main" auto "footer  footer footer" 100px 200px auto 200px;
-  }
-  main {
-    display: flex;
-    justify-content: center;
+    grid-template: "header  header header" 300px "navbar  navbar navbar " 50px "main    main  main" auto "footer  footer footer" 100px 200px auto 200px;
   }
   .contenido-clases {
     display: grid;
@@ -434,29 +431,35 @@ form {
   .img1 {
     grid-area: img1;
     display: flex;
-    padding: 10px 10px 10px 10px;
     width: 400px;
+    height: 400px;
   }
   .img2 {
     grid-area: img2;
     display: flex;
-    padding: 10px 10px 10px 10px;
     width: 400px;
+    height: 400px;
   }
   .img3 {
     grid-area: img3;
     display: flex;
-    padding: 10px 10px 10px 10px;
     width: 400px;
+    height: 400px;
   }
   .h2 {
     grid-area: h2;
+    width: 400px;
+    height: 400px;
   }
   .h3 {
     grid-area: h3;
+    width: 400px;
+    height: 400px;
   }
   .h4 {
     grid-area: h4;
+    width: 400px;
+    height: 400px;
   }
   .grid-container-quienes {
     grid-template: "header  header header" 300px "navbar  navbar navbar " 50px "main     main  main" auto "footer  footer footer" 100px/200px auto 200px;
@@ -470,9 +473,7 @@ form {
     height: 400px;
     width: 400px;
   }
-  .textoQuienes{
-    padding-top: 4em;
+  .portada {
+    width: 20px;
   }
-  
-
 }/*# sourceMappingURL=estilo.css.map */
