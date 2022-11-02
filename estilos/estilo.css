@@ -141,6 +141,9 @@ body {
   grid-template: "header" 80px "navbar" 50px "main" auto  "footer" 50px;
 }
 
+.portada{
+  padding-top: 50px;
+}
 /*servicios*/
 .contenido-servicios {
   display: flex;
@@ -253,7 +256,6 @@ form {
     gap: 10px;
     grid-template: "header header header" 100px "navbar  navbar navbar" 50px "main  main main" auto "footer footer footer" 100px;
   }
-
   .contenido-servicios {
     display: flex;
     flex-direction: row;
