@@ -15,6 +15,9 @@ body {
   min-height: 100%;
 }
 
+main{
+  background-color: #ecf0f1;
+}
 .grid-container > * {
   box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
   border-radius: 4px;
@@ -261,6 +264,10 @@ form {
     flex-direction: row;
     justify-content: space-between;
   }
+
+  .portada{
+    padding-top: 10px;
+  }
   .img-serv {
     height: 200px;
     width: 200px;
@@ -331,7 +338,9 @@ form {
   .collapse {
     background-color: #ecf0f1;
   }
-
+.portada{
+    padding-top: 10px;
+  }
   .contenido-servicios {
     display: grid;
     grid-template-columns: 3fr;
