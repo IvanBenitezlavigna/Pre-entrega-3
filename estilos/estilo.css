@@ -115,9 +115,6 @@ main{
   background-color: #ecf0f1;
 }
 
-
-
-
 .frase-footer {
   display: flex;
   justify-content: center;
@@ -268,6 +265,8 @@ form {
   .portada{
     padding-top: 10px;
   }
+  
+
   .img-serv {
     height: 200px;
     width: 200px;
